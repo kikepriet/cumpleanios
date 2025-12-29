@@ -1,0 +1,44 @@
+# Node
+node_modules/
+
+# Composer
+/vendor/
+/composer.phar
+
+# Environment
+.env
+.env.*
+
+# Laravel / PHP
+/public/storage
+/storage/*.key
+/storage/app/public
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+/.vagrant
+
+# Logs and runtime
+/storage/logs/
+/storage/framework/cache/data/
+/storage/framework/sessions/
+/storage/framework/views/
+
+# IDEs and OS
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+
+# Build outputs
+/public/build/
+
+# PHPMailer local copy (if present)
+/PHPMailer-master/
+
+# Misc
+*.log
+*.cache
+
+# Ignore node build artifacts
+/dist/
