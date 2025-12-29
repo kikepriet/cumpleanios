@@ -20,12 +20,13 @@ $dbName = $_ENV['DB_NAME'] ?? getenv('DB_NAME');
 // Variables de correo (configúralas en .env)
 $mailTo = $_ENV['MAIL_TO'] ?? 'destinatario@example.com';
 $mailFrom = $_ENV['MAIL_FROM'] ?? 'no-reply@example.com';
-$mailFromName = $_ENV['MAIL_FROM_NAME'] ?? 'Cumpleaños';
+$mailFromName = $_ENV['MAIL_FROM_NAME'] ?? 'Birthday Notifier';
 $smtpHost = $_ENV['SMTP_HOST'] ?? getenv('SMTP_HOST');
 $smtpPort = $_ENV['SMTP_PORT'] ?? 587;
 $smtpUser = $_ENV['SMTP_USER'] ?? getenv('SMTP_USER');
 $smtpPass = $_ENV['SMTP_PASS'] ?? getenv('SMTP_PASS');
-$smtpSecure = $_ENV['SMTP_SECURE'] ?? 'tls';
+//$smtpSecure = $_ENV['SMTP_SECURE'] ?? 'tls';
+$smtpSecure = PHPMailer::ENCRYPTION_STARTTLS ?? 'tls';
 
 // Conectar a MySQL
 $hoy = date('Y-m-d');
